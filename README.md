@@ -11,21 +11,23 @@ Tujuannya: menjelaskan **variasi return saham** dengan lebih baik menggunakan li
 
 ### Rumus Umum:
 
-\[
-E(R*i) - R_f = α + β₁*RMRF + β₂*SMB + β₃*HML + β₄*RMW + β₅*CMA
-\]
+$$
+E(R_i) - R_f = \alpha + \beta_1 \cdot \text{RMRF} + \beta_2 \cdot \text{SMB} + \beta_3 \cdot \text{HML} + \beta_4 \cdot \text{RMW} + \beta_5 \cdot \text{CMA}
+$$
 
 Keterangan:
 
--   \( E(R_i) \): Expected return saham
--   \( R_f \): Risk-free rate
--   \( α \): Intercept (bias)
--   \( β\_ \): Sensitivitas saham terhadap faktor tertentu
--   **RMRF**: Market Excess Return
--   **SMB**: Small Minus Big (ukuran perusahaan)
--   **HML**: High Minus Low (value stock)
--   **RMW**: Robust Minus Weak (profitabilitas)
--   **CMA**: Conservative Minus Aggressive (investasi perusahaan)
+| Simbol             | Deskripsi                                                                 |
+|--------------------|---------------------------------------------------------------------------|
+| $\( E(R_i) \)$       | Expected return dari saham atau aset \(i\)                                |
+| $\( R_f \)$          | Risk-free rate (tingkat pengembalian bebas risiko)                       |
+| $\( \alpha \)$       | Intercept atau abnormal return (jika ada deviasi dari model)              |
+| $\( \beta_1 \ldots \ _5 \)$ | Koefisien sensitivitas terhadap masing-masing faktor risiko             |
+| **RMRF**           | Market Risk Premium (selisih return pasar dan risk-free rate)             |
+| **SMB**            | Size factor: return saham kecil dikurangi return saham besar              |
+| **HML**            | Value factor: return saham dengan nilai tinggi dikurangi yang rendah      |
+| **RMW**            | Profitability factor: perusahaan dengan profit tinggi vs rendah           |
+| **CMA**            | Investment factor: perusahaan konservatif vs agresif dalam berinvestasi   |
 
 ---
 
@@ -45,4 +47,10 @@ Keterangan:
 ```bash
 git clone https://github.com/farisfadhail/five-factor-asset-model-ai.git
 cd five-factor-asset-model-ai
+```
+
+### 2. Jalankan di Local
+
+```bash
+npm run start
 ```
