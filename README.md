@@ -1,12 +1,12 @@
 # 📊 Five-Factor Asset Pricing Model AI (Fama-French + Mistral AI)
 
-Proyek ini menggabungkan model **Five-Factor Asset Pricing Model** dari Fama dan French dengan kekuatan **AI dari Mistral** untuk memberikan **analisis cerdas dan naratif** terhadap permintaan pengguna yang berkaitan dengan saham dan kondisi pasar.
+Proyek ini menggabungkan model **Five-Factor Asset Pricing Model** dari Fama dan French dengan **AI dari Mistral** untuk memberikan **analisis cerdas dan naratif** terhadap permintaan pengguna yang berkaitan dengan saham dan kondisi pasar.
 
 ---
 
 ## 🧠 Apa Itu Five-Factor Asset Pricing Model?
 
-Model ini dikembangkan oleh **Eugene F. Fama dan Kenneth R. French** pada tahun 2015 sebagai perluasan dari model tiga faktornya sebelumnya.  
+Model ini dikembangkan oleh **Eugene F. Fama dan Kenneth R. French** pada tahun 2015 sebagai perluasan dari model "three factor" sebelumnya.  
 Tujuannya: menjelaskan **variasi return saham** dengan lebih baik menggunakan lima sumber risiko sistematis.
 
 ### 🔢 Rumus Umum:
