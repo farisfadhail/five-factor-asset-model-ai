@@ -19,9 +19,9 @@ Keterangan:
 
 -   \( E(R_i) \): Expected return saham
 -   \( R_f \): Risk-free rate
--   \( R_m \): Market return
 -   \( α \): Intercept (bias)
--   \( β\_\* \): Sensitivitas saham terhadap faktor tertentu
+-   \( β\_ \): Sensitivitas saham terhadap faktor tertentu
+-   **RMRF**: Market Excess Return
 -   **SMB**: Small Minus Big (ukuran perusahaan)
 -   **HML**: High Minus Low (value stock)
 -   **RMW**: Robust Minus Weak (profitabilitas)
