@@ -14,15 +14,24 @@ async function analyzeWithAI(userPrompt, parsedData) {
                     User mengirimkan permintaan berikut:
                     "${userPrompt}"
 
-                    Tugas Anda adalah:
-                    1. **Analisis kecenderungan pasar secara umum** berdasarkan lima faktor (RMRF, SMB, HML, RMW, CMA).
-                    2. **Cocokkan karakteristik saham yang disebutkan (berdasarkan ticker)** dengan tren data tersebut.
-                    - Jika user menyebut saham tertentu (misalnya AAPL, GOTO, atau BBCA), berikan analisis **bagaimana kinerja historis dan profil saham tersebut (ukuran, profitabilitas, nilai, investasi, dsb.)** dapat disesuaikan dengan data pasar saat ini.
-                    - Jika informasi fundamental saham **tidak tersedia**, jelaskan **kemungkinan dampaknya secara umum** berdasarkan profil perusahaan sejenis.
-                    3. **Berikan rekomendasi atau perhatian** terkait risiko dan peluang investasi berdasarkan hasil pencocokan tersebut.
+                    Tugas Anda:
 
-                    Gunakan bahasa yang **jelas dan mudah dipahami orang awam** (non-keuangan).
-                    Gunakan sudut pandang yang **netral dan objektif**, hindari opini pribadi
+                    1. Lakukan analisis objektif terhadap kondisi pasar saat ini berdasarkan lima faktor utama:
+                    - RMRF (Market Risk Premium)
+                    - SMB (Size effect)
+                    - HML (Value effect)
+                    - RMW (Profitability effect)
+                    - CMA (Investment effect)
+
+                    2. Jika user menyebutkan **ticker saham tertentu**, analisis karakteristik saham tersebut (ukuran perusahaan, nilai, profitabilitas, strategi investasi) dan cocokkan dengan kondisi pasar saat ini.
+                    - Jika informasi spesifik saham tidak tersedia, gunakan pendekatan umum berdasarkan kategori saham (misalnya: small-cap tech, blue chip, dsb).
+
+                    3. **Jika user tidak menyebutkan ticker saham apapun**, berikan analisis pasar secara umum saja **tanpa menyebutkan atau merekomendasikan saham tertentu.**
+
+                    4. Sajikan hasil analisis dalam bahasa yang **mudah dipahami oleh orang awam**, dengan nada yang **netral dan objektif**, tanpa memberikan opini pribadi atau saran investasi yang eksplisit.
+
+                    Fokuskan pada **penjelasan risiko dan peluang secara menyeluruh**, bukan pada prediksi harga atau rekomendasi beli/jual.
+
                    `;
 
 	const res = await mistral.chat.complete({
